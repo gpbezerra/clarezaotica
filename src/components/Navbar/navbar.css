@@ -1,0 +1,41 @@
+.navbarContainer {
+    display: flex;
+    background-color: #087D77;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    position: relative; /* Para garantir que o menuToggle seja posicionado corretamente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.navbarContainer img {
+    width: 65px;
+}
+
+.navbarLinks {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Centraliza os links de navegação */
+}
+
+.navbarCardLinks {
+    margin: 0px 20px;
+}
+
+.navbarCardLinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Bebas Neue", sans-serif;
+    position: relative;
+}
+
+.navbarCardLinks a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #EEC102;
+    transition: width 0
