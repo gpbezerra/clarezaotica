@@ -1,0 +1,67 @@
+/* Modal.scss */
+.navbarMobileContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbarMobileContent {
+  display: flex;
+  flex-direction: column;
+  background-color: #087D77;
+  height: 800px;  
+  width: 80%;
+  float: right;
+  border-radius: 0px 0px 0px 15px;
+}
+
+#navbarMobileCloseButton{
+  height: 24px;
+  width: 24px;
+  margin: 15px 15px 10px auto;
+}
+
+
+.navbarMobile{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ }
+
+#navbarMobileLogo{
+  width: 200px;
+}
+
+.navbarMobileLinks{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 40px;
+}
+
+.navbarMobileCardLink{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", system-ui;
+}
+
+.navbarMobileCardLink img{
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+#navbarMobileArrow{
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  margin-right: 40px;
+}

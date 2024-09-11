@@ -4,8 +4,7 @@
     align-items: center;
     padding: 5px;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
-    position: relative; /* Para garantir que o menuToggle seja posicionado corretamente */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    position: relative; 
 }
 
 .navbarContainer img {
@@ -15,12 +14,9 @@
 .navbarLinks {
     display: flex;
     width: 100%;
-    justify-content: center; /* Centraliza os links de navegação */
+    justify-content: space-evenly
 }
 
-.navbarCardLinks {
-    margin: 0px 20px;
-}
 
 .navbarCardLinks a {
     text-decoration: none;
@@ -38,4 +34,36 @@
     width: 0;
     height: 2px; 
     background-color: #EEC102;
-    transition: width 0
+    transition: width 0.3s ease;
+}
+
+.navbarCardLinks a.active {
+    border-bottom: 2px solid #EEC102; 
+}
+
+.navbarCardLinks a:hover {
+    color: #EEC102;
+}
+
+.navbarCardLinks a:hover::before {
+    width: 100%;
+}
+
+.menuToggle {
+    display: none;
+    margin-left: auto; 
+}
+
+.menuToggle img {
+    width: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbarLinks {
+        display: none;
+    }
+    .menuToggle {
+        display: flex;
+        margin-right: 10px;
+    }
+}
