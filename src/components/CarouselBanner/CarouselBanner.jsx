@@ -37,3 +37,5 @@ const CarouselBanner = () => {
 }
 
 export default CarouselBanner;
+
+// imagem de um oculos com letras atras do oculos de maneira legivel, as letras atras de oculos ficam embaçada  react
