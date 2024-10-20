@@ -6,7 +6,6 @@
 .carouselItem {
     position: relative;
     max-height: 650px;
-
 }
 
 .carouselItem::before {

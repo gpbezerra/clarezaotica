@@ -4,6 +4,7 @@ import CarouselBanner from "../../components/CarouselBanner/CarouselBanner";
 import Glasses from "../../components/Glasses/Glasses";
 import Mission from "../../components/Mission/Mission";
 import Products from "../../components/Products/Products";
+import Benefits from "../../components/Benefits/Benefits";
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Glasses/>
             <Mission />
             <Products/>
+            <Benefits/>
         </>
     )
 }

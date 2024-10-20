@@ -4,9 +4,27 @@ import zeiss from "../../assets/zeiss.png";
 import rodenstock from "../../assets/rodenstock.png";
 import hoya from "../../assets/hoya.png";
 import transitions from "../../assets/transitions.png";
+import { useEffect } from "react";
 
 
 const Products = () => {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__backInRight', 'animate__slower', 'animate__delay-1s');
+                }
+            });
+        });
+
+        const cards = document.querySelectorAll('.productsImages');
+        cards.forEach(card => observer.observe(card));
+
+        return () => {
+            cards.forEach(card => observer.unobserve(card));
+        };
+    }, []); 
     return (
         <>
             <div className="productsContainer">
@@ -16,7 +34,7 @@ const Products = () => {
                     <a href="">Confira nosso catálogo</a>
                 </div>
 
-                <div className="animate__animated animate__fadeInUp productsImages">
+                <div className="productsImages">
                     <img src={essilor} alt="Essilor logo" />
                     <img src={zeiss} alt="Zeiss logo" />
                     <img src={rodenstock} alt="Rodenstock logo" />
