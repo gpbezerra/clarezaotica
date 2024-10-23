@@ -66,17 +66,18 @@ const Benefits = () => {
                     </div>
                 ))}
             </div>
-            {/* TODO: ARRUMAR CSS DOS ITEMS  */}
             <div className='benefitsCarousel'>
                 <Carousel controls={false}>
                     {cards.map((card, key) => {
                         return (
-                            <Carousel.Item key={key} className='benefitsCarouselItem'>
+                            <Carousel.Item key={key} className='benefitsContainerItem'>
                                 <Carousel.Caption>
-                                    <h2>{card.title}</h2>
-                                    <div className='benefitsCarouselContent'>
-                                        <p>{card.text}</p>
-                                        <img src={card.image} alt={card.title} />
+                                    <div className='benefitsCarouselItem'>
+                                        <h2>{card.title}</h2>
+                                        <div className='benefitsCarouselContent'>
+                                            <p>{card.text}</p>
+                                            <img src={card.image} alt={card.title} />
+                                        </div>
                                     </div>
                                 </Carousel.Caption>
                             </Carousel.Item>
