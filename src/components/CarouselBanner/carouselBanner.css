@@ -1,11 +1,12 @@
 .carouselContainer {
     width: 100%;
-    overflow: hidden;
+    
 }
 
 .carouselItem {
     position: relative;
     max-height: 650px;
+    margin-top: 60px
 }
 
 .carouselItem::before {
