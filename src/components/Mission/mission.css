@@ -1,7 +1,7 @@
 .missionContainer {
     display: flex;
     background-color: #087D77;
-    width: 100vw;
+    width: 100%;
     padding: 100px 8%;
     transition: opacity;
     opacity: 1;

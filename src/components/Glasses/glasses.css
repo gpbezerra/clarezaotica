@@ -23,7 +23,7 @@
 
 .glassesContainer{
     display: flex;
-    width: 100vw;
+    width: 100%;
     padding: 100px 8%;
     justify-content: center;
     align-items: center;
