@@ -12,25 +12,26 @@
     margin-bottom: 30px;
     color: #087D77;
     font-family: "Bebas Neue", sans-serif;
-
-}
-
-.catalogContainer p{
     text-align: center;
 }
 
-.catalogContent{
-    display: flex;
-    width: 100%;
+.catalogContainer p {
+    text-align: center;
 }
 
-.catalogContentSelector{
+.catalogContent {
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.catalogContentSelector {
     display: flex;
     flex-direction: column;
     width: 30%;
 }
 
-#catalogButtonSelected{
+#catalogButtonSelected {
     color: white;
     background-color: #087D77;
     border-radius: 15px;
@@ -41,7 +42,7 @@
     width: 200px;
 }
 
-#catalogButton{
+#catalogButton {
     color: #087D77;
     background-color: white;
     border-radius: 15px;
@@ -53,46 +54,44 @@
 }
 
 
-.catalogContentSelector h3{
+.catalogContentSelector h3 {
     font-weight: bolder;
 }
 
-.catalogContentData{
+.catalogContentData {
     display: flex;
     width: 70%;
     padding-left: 20px;
-    margin-top: 50px;
 }
 
-.catalogContentImage{
+.catalogContentImage {
     width: 50%;
     margin-right: 20px;
 }
 
-.catalogContentImage img{
+.catalogContentImage img {
     width: 100%;
+    max-width: 500px;
 }
 
-.catalogContentText{
+.catalogContentText {
     width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.catalogContentText p{
+.catalogContentText p {
     text-align: left;
-    
+
 }
 
-.catalogContentText h3{
+.catalogContentText h3 {
     font-weight: bolder;
-    color: #087D77;
     font-family: "Bebas Neue", sans-serif;
     text-align: left;
 }
 
-.catalogContentText a{
+.catalogContentText a {
     font-family: "Bebas Neue", sans-serif;
     text-decoration: none;
     color: white;
@@ -101,4 +100,87 @@
     text-align: center;
     width: 180px;
     padding: 10px;
+    font-size: 20px;
+    transition: 200ms linear;
+}
+
+.catalogContentText a:hover {
+    background-color: #EEC102;
+    color: black;
+}
+
+.catalogSelector {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 870px) {
+    .catalogContent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .catalogContainer h1 {
+        font-size: 40px;
+    }
+
+
+
+    .catalogSelector {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #catalogButtonSelected {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+
+    }
+
+    #catalogButton {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+
+    }
+
+    .catalogContentSelector {
+        width: 100%;
+    }
+
+    .catalogContentSelector h3 {
+        text-align: center;
+    }
+
+    .catalogContentData {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalogContentText {
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .catalogContentText p {
+        text-align: center;
+    }
+
+
+    .catalogContentImage {
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -37,9 +37,11 @@ const Catalog = () => {
             <div className="catalogContent">
                 <div className="catalogContentSelector">
                     <h3>Nossas lentes</h3>
+                    <div className="catalogSelector">
                     {glasses.map((glass, key) => (
                         <button id={glass.show ? "catalogButtonSelected" : "catalogButton"}  onClick={() => handleGlasses(glass)} key={key}>{glass.name}</button>
                     ))}
+                    </div>
                 </div>
                 <div className="catalogContentData">
                     {glasses.filter(glass => glass.show).map((glass, index) => (
