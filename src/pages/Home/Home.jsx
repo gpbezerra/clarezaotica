@@ -6,6 +6,7 @@ import Mission from "../../components/Mission/Mission";
 import Products from "../../components/Products/Products";
 import Benefits from "../../components/Benefits/Benefits";
 import Catalog from "../../components/Catalog/Catalog";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <Products/>
             <Benefits/>
             <Catalog/>
+            <Footer/>
         </>
     )
 }

@@ -35,7 +35,7 @@
  }
 
 #navbarMobileLogo{
-  width: 200px;
+  width: 250px;
 }
 
 .navbarMobileLinks{
@@ -43,6 +43,7 @@
   flex-direction: column;
   width: 100%;
   margin-left: 40px;
+  margin-top: 20px;
 }
 
 .navbarMobileCardLink{

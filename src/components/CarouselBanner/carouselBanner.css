@@ -104,6 +104,10 @@
 
 
 @media (max-width: 600px) {
+    .carouselItem {
+        margin-top: 55px
+    }
+
     .carousel-caption {
         top: 5%;
     }
