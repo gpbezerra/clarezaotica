@@ -6,14 +6,26 @@ import lenses from "../../assets/lenses.png"
 const glassesObject = [
     {
         image: lenses,
-        name: "Lente 1",
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        name: "Lentes Multifocais",
+        text: "Tecnologia avançada para visão nítida em todas as distâncias. Nossas lentes multifocais oferecem conforto visual e adaptação rápida, proporcionando uma experiência visual sem igual para usuários de todas as idades.",
         show: true
     },
     {
         image: lenses,
-        name: "Lente 2",
-        text: "sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+        name: "Lentes Fotocromáticas",
+        text: "Proteção UV e conforto visual em qualquer ambiente. Estas lentes inteligentes se adaptam automaticamente à luz, escurecendo ao ar livre e clareando em ambientes internos, combinando praticidade e estilo em um único produto",
+        show: false
+    },
+    {
+        image: lenses,
+        name: "Lentes infantis",
+        text: "Proteção essencial contra a luz azul nociva de dispositivos eletrônicos. Nossas lentes AntiBlue reduzem a fadiga visual e melhoram o conforto durante o uso prolongado de telas, preservando sua saúde ocular na era digital.",
+        show: false
+    },
+    {
+        image: lenses,
+        name: "Lentes AntiBlue",
+        text: "Proteção essencial contra a luz azul nociva de dispositivos eletrônicos. Nossas lentes AntiBlue reduzem a fadiga visual e melhoram o conforto durante o uso prolongado de telas, preservando sua saúde ocular na era digital.",
         show: false
     },
 ];

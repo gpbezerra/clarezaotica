@@ -39,7 +39,7 @@
     padding: 10px;
     margin: 10px 0px;
     font-size: 18px;
-    width: 200px;
+    width: 250px;
 }
 
 #catalogButton {
@@ -50,9 +50,8 @@
     padding: 10px;
     margin: 10px 0px;
     font-size: 18px;
-    width: 200px;
+    width: 250px;
 }
-
 
 .catalogContentSelector h3 {
     font-weight: bolder;
@@ -82,7 +81,6 @@
 
 .catalogContentText p {
     text-align: left;
-
 }
 
 .catalogContentText h3 {
@@ -114,8 +112,7 @@
     flex-direction: column;
 }
 
-
-@media (max-width: 870px) {
+@media (max-width: 980px) {
     .catalogContent {
         flex-direction: column;
         justify-content: center;
@@ -127,26 +124,33 @@
         font-size: 40px;
     }
 
-
-
     .catalogSelector {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        display: block;
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap; 
+        width: 100%; 
+        margin-bottom: 20px;
     }
-
 
     #catalogButtonSelected {
         margin-left: 10px;
         margin-right: 10px;
-        padding: 10px;
-
+        padding: 5px;
+        width: 200px; 
+        height: 50px; 
+        font-size: 16px; 
+        margin-bottom: 15px;
     }
 
     #catalogButton {
         margin-left: 10px;
         margin-right: 10px;
-        padding: 10px;
+        padding: 5px;
+        width: 200px; 
+        height: 50px; 
+        font-size: 16px;
+        margin-bottom: 15px;
 
     }
 
@@ -174,7 +178,6 @@
     .catalogContentText p {
         text-align: center;
     }
-
 
     .catalogContentImage {
         margin: 0px;
