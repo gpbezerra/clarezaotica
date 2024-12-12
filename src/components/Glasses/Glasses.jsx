@@ -23,7 +23,7 @@ const Glasses = () => {
     return (
         <div className="glassesContainer">
             <img src={glassesImage} alt="" />
-            <a href="">Confira nosso catálogo</a>
+            <a id='buttonCatalog' href="">Confira nosso catálogo</a>
 
         </div>
     );

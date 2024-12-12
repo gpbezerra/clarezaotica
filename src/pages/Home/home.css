@@ -1,0 +1,37 @@
+#buttonCatalog {
+    text-decoration: none;
+    display: flex;
+    background-color: #087D77;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 25px;
+    width: 300px;
+    height: 60px;
+    transition: 200ms linear;
+}
+
+#buttonCatalog:hover {
+    background-color: #EEC102;
+    color: black;
+}
+
+@media (max-width: 770px) {
+    #buttonCatalog{
+        font-size: 20px;
+        width: 200px;
+        height: 55px;
+
+    }
+}
+
+@media (max-width: 450px) {
+    #buttonCatalog{
+        font-size: 17px;
+        width: 180px;
+        height: 45px;
+
+    }
+}

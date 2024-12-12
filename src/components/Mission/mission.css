@@ -2,7 +2,9 @@
     display: flex;
     background-color: #087D77;
     width: 100%;
-    padding: 100px 8%;
+    padding: 100px 15%;
+
+    /* padding: 100px 8%; */
     transition: opacity;
     opacity: 1;
 }
@@ -19,6 +21,7 @@
 
 .missionText p {
     margin-bottom: 50px;
+    color: white;
 }
 
 .missionImage {
@@ -54,7 +57,7 @@
     }
 
     .missionImage img {
-        width: 150px;
+        width: 180px;
         max-height: 200px; 
         margin-bottom: 20px;
     }

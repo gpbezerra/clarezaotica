@@ -54,7 +54,7 @@ const Products = () => {
                     <img id="transitionsLogo" src={transitions} alt="Transitions logo" />
                 </div>
 
-                <a href="">Confira nosso catálogo</a>
+                <a id="buttonCatalog" href="">Confira nosso catálogo</a>
 
             </div>
 

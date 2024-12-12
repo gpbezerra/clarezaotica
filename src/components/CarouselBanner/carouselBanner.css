@@ -1,12 +1,11 @@
 .carouselContainer {
     width: 100%;
     overflow: hidden;
-   
 }
 
 .carouselItem {
     position: relative;
-    max-height: 650px;
+    /* max-height: 650px; */
     margin-top: 60px
 }
 
@@ -21,10 +20,12 @@
     z-index: 1;
 }
 
+
+
 .carouselItem img {
-    width: 100vw;
-    height: 100vh;
-    /* max-height: 750px;  */
+    width: 100%;
+    height: 100%;
+    max-height: 900px;
 }
 
 .carouselItem h3 {
@@ -94,7 +95,7 @@
         bottom: 0;
     /* background-color: #087D77; */
 
-        /* background: linear-gradient(to right, rgba(8, 125, 119, 0.8), transparent, rgba(8, 125, 119, 0.8)); */
+        background: linear-gradient(to right, rgba(8, 125, 119, 0.8), transparent, rgba(8, 125, 119, 0.8));
         z-index: 0;
     }
 
