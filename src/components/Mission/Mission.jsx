@@ -19,15 +19,16 @@ const Mission = () => {
         return () => {
             cards.forEach(card => observer.unobserve(card));
         };
-    }, []); 
+    }, []);
 
     return (
         <div className="missionContainer">
             <div className="missionText">
+                <h1>Missão</h1>
                 <p>Nossa missão é proporcionar a você uma visão clara e confortável, utilizando apenas as melhores marcas de lentes do mercado. </p>
                 <p>Especialistas em Zeiss, Hoya, Rodenstock e Essilor, oferecemos uma consultoria personalizada para encontrar a solução ideal para suas necessidades visuais, tudo com um atendimento diferenciado e preços competitivos</p>
             </div>
-            <div  className="missionImage">
+            <div className="missionImage">
                 <img src={logo} alt="Logo clareza óticaa" />
             </div>
         </div>

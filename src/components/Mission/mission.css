@@ -3,7 +3,7 @@
     background-color: #087D77;
     width: 100%;
     padding: 100px 15%;
-
+    align-items: center;
     /* padding: 100px 8%; */
     transition: opacity;
     opacity: 1;
@@ -17,6 +17,12 @@
     font-size: 20px;
     font-family: "Open Sans", system-ui;
     font-weight: 350;
+}
+
+.missionText h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .missionText p {
@@ -46,13 +52,16 @@
         text-align: center;
     }
 
+    .missionText h1 {
+        font-size: 40px;
+    }
+
     .missionText p{
       margin-bottom: 30px;
     }
     
     .missionImage {
         width: 100%;
-        order: -1; 
         justify-content: center; 
     }
 

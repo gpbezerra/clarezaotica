@@ -1,9 +1,12 @@
-.blogHomeContainer{
+.blogHomeContainer {
     width: 100%;
     padding: 100px 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.blogHomeContainer h1{
+.blogHomeContainer h1 {
     font-size: 60px;
     margin-bottom: 30px;
     color: #087D77;
@@ -11,11 +14,88 @@
     text-align: center;
 }
 
-.blogHomeContainer p{
+.blogHomeContainer p {
     font-size: 20px;
     color: #505554;
     font-family: "Open Sans", system-ui;
     text-align: center;
 }
 
+.blogHomeDeckCard {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 30px 0px;
 
+}
+
+.blogHomeCard {
+    text-decoration: none;
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    overflow: hidden; /* Garante que a imagem não saia do card */
+}
+
+.blogHomeCard img {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+    transition: transform 0.3s ease; /* Transição suave no zoom */
+}
+
+.blogHomeCard:hover img {
+    transform: scale(1.1); /* Aplica o zoom na imagem */
+}
+
+.blogHomeCardText {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.blogHomeCardText h2 {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-family: "Open Sans", system-ui;
+}
+
+.blogHomeCardText p {
+    text-align: left;
+    color: #505554;
+    font-size: 15px;
+    font-family: "Open Sans", system-ui;
+}
+
+@media (max-width: 900px) {
+    .blogHomeContainer{
+        padding: 40px 8%;
+    }
+
+    .blogHomeContainer h1{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .blogHomeContainer p{
+        font-size: 15px;
+    }
+
+
+    .blogHomeDeckCard {
+      flex-direction: column;    
+    }
+
+    .blogHomeCard{
+        width: 100%;
+        max-width: none;
+        margin-top: 20px;
+    }
+
+    .blogHomeCard img{
+        max-height: 250px;
+    }
+}

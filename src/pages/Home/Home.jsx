@@ -7,8 +7,8 @@ import Products from "../../components/Products/Products";
 import Benefits from "../../components/Benefits/Benefits";
 import Catalog from "../../components/Catalog/Catalog";
 import Footer from "../../components/Footer/Footer";
-import CarouselBlog from "../../components/CaruselBlog/CarouselBlog";
 import BlogHome from "../../components/BlogHome/BlogHome";
+import Solutions from "../../components/Solutions/Solutions";
 
 const Home = () => {
     return (
@@ -20,8 +20,8 @@ const Home = () => {
             <Products/>
             <Benefits/>
             <Catalog/>
-            {/* <BlogHome/> */}
-            {/* <CarouselBlog/> */}
+            <Solutions/>
+            <BlogHome/>
             <Footer/>
         </>
     )
