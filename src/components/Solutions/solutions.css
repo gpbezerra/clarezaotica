@@ -1,17 +1,17 @@
 .solutionsContainer {
     width: 100%;
-    padding: 100px 15%;
+    padding: 50px 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #087D77;
-    justify-content: center;  /* Centraliza os itens na vertical */
-    min-height: 100vh;        /* Garante que o contêiner ocupe toda a altura da tela */
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .solutionsContainer h1 {
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 20px;
     color: #fff;
     font-family: "Bebas Neue", sans-serif;
     text-align: center;
@@ -19,25 +19,25 @@
 
 .solutionsCardDeck {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* Dois cards por linha */
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     width: 100%;
-    justify-items: center;  /* Centraliza os cards horizontalmente */
-    align-items: center;    /* Centraliza os cards verticalmente */
-    max-width: 1200px;      /* Limita o tamanho máximo do contêiner */
-    margin: 0 auto;         /* Centraliza o contêiner */
+    justify-items: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .solutionsCard {
     position: relative;
     width: 100%;
-    max-width: 600px;  /* Limita a largura máxima dos cards */
+    max-width: 600px;
     height: 300px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     display: flex;
-    flex-direction: column; /* Para garantir que o conteúdo do card se ajuste */
+    flex-direction: column;
 }
 
 .solutionsCardImage {
@@ -59,21 +59,61 @@
     color: white;
     z-index: 2;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(88, 85, 85, 0.8);
     border-radius: 5px;
-    width: 100%;  
-    height: 100%; 
+    width: 100%;
+    height: 100%;
 }
 
 .solutionsCardText h2 {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 10px;
     color: white;
     font-family: "Bebas Neue", sans-serif;
 }
 
 .solutionsCardText p {
-    font-size: 15px;
+    font-size: 14px;
     font-family: "Open Sans", sans-serif;
     color: white;
+}
+
+@media (max-width: 910px) {
+    .solutionsCardDeck {
+        grid-template-columns: 1fr;
+    }
+
+    .solutionsContainer {
+        padding: 30px 10%;
+    }
+
+    .solutionsCard {
+        height: 250px;
+    }
+
+    .solutionsCardText h2 {
+        font-size: 28px;
+    }
+
+    .solutionsCardText p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .solutionsContainer {
+        padding: 20px 5%;
+    }
+
+    .solutionsCard {
+        height: 220px;
+    }
+
+    .solutionsCardText h2 {
+        font-size: 24px;
+    }
+
+    .solutionsCardText p {
+        font-size: 13px;
+    }
 }

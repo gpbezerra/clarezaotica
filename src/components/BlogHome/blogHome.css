@@ -84,18 +84,20 @@
         font-size: 15px;
     }
 
-
     .blogHomeDeckCard {
-      flex-direction: column;    
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
     }
 
     .blogHomeCard{
         width: 100%;
-        max-width: none;
         margin-top: 20px;
     }
+}
 
+@media (max-width: 430px) {
     .blogHomeCard img{
-        max-height: 250px;
+       max-height: 210px;
     }
 }

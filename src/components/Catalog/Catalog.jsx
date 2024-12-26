@@ -65,7 +65,7 @@ const Catalog = () => {
                             <div className="catalogContentText" key={index}>
                                 <h3>{glass.name}</h3>
                                 <p>{glass.text}</p>
-                                <a id="buttonCatalog" href="/catalogo">Confira nosso catálogo</a>
+                                <a id="buttonCatalog" href="/development">Confira nosso catálogo</a>
                             </div>
                         </>
                     ))}

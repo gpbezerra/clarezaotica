@@ -31,7 +31,7 @@ const Products = () => {
                 <div className="productsText">
                     <h1>Produtos Inovadores</h1>
                     <p>Na CLAREZA ÓTICA, oferecemos acesso às melhores e mais inovadoras marcas de lentes do mercado. Trabalhamos com Zeiss, Hoya, Rodenstock e Essilor para garantir que você tenha à sua disposição lentes de alta qualidade que proporcionam uma visão clara e confortável. Com tecnologias de ponta, nossas lentes são projetadas para atender às suas necessidades visuais específicas, oferecendo nitidez, durabilidade e conforto.</p>
-                    <a href="">Confira nosso catálogo</a>
+                    <a href="/development">Confira nosso catálogo</a>
                 </div>
 
                 <div className="productsImages">
@@ -54,7 +54,7 @@ const Products = () => {
                     <img id="transitionsLogo" src={transitions} alt="Transitions logo" />
                 </div>
 
-                <a id="buttonCatalog" href="">Confira nosso catálogo</a>
+                <a id="buttonCatalog" href="/development">Confira nosso catálogo</a>
 
             </div>
 

@@ -16,7 +16,7 @@ const NavbarMobile = ({ setMenuOpen }) => {
           <img id="navbarMobileLogo" src={logo} alt="Logo Clareza ótica" />
           <div className="navbarMobileLinks">
             {links.map((link, key) => (
-              <NavLink to={link.link} key={key} className="navbarMobileCardLink">
+              <NavLink onClick={() => setMenuOpen(false)} to={link.link} key={key} className="navbarMobileCardLink">
                 <img src={link.icon} alt={`${link.text} icone`} />
                 <p>{link.text}</p>
                 <img id="navbarMobileArrow" src={arrow} alt="ir para link" />

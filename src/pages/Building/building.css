@@ -1,0 +1,31 @@
+.buildingContainer {
+    display: flex;
+    width: 100%;
+    padding: 100px 15%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buildingContainer img {
+    width: 400px;
+    margin-top: 20px;
+}
+
+.buildingContainer h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #087D77;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+@media (max-width: 500px) {
+    .buildingContainer h1 {
+        font-size: 40px;
+    }
+
+    .buildingContainer img {
+        width: 300px;
+    }
+}

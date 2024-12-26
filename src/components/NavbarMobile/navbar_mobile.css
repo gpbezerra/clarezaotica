@@ -13,32 +13,37 @@
   display: flex;
   flex-direction: column;
   background-color: #087D77;
-  height: 800px;  
+  height: 800px;
   width: 80%;
   float: right;
   border-radius: 0px 0px 0px 15px;
 }
 
-#navbarMobileCloseButton{
+#navbarMobileCloseButton {
   height: 24px;
   width: 24px;
   margin: 15px 15px 10px auto;
 }
 
 
-.navbarMobile{
+.navbarMobile {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
- }
+}
 
-#navbarMobileLogo{
+.navbarMobile p {
+  color: white;
+  margin: 0;
+}
+
+#navbarMobileLogo {
   width: 250px;
 }
 
-.navbarMobileLinks{
+.navbarMobileLinks {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -46,22 +51,22 @@
   margin-top: 20px;
 }
 
-.navbarMobileCardLink{
+.navbarMobileCardLink {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: white;
   text-decoration: none;
   font-family: "Open Sans", system-ui;
 }
 
-.navbarMobileCardLink img{
+.navbarMobileCardLink img {
   width: 35px;
   height: 35px;
   margin-right: 20px;
 }
 
-#navbarMobileArrow{
+#navbarMobileArrow {
   width: 18px;
   height: 18px;
   margin-left: auto;

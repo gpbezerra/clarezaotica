@@ -13,7 +13,6 @@ import Solutions from "../../components/Solutions/Solutions";
 const Home = () => {
     return (
         <>
-            <Navbar />
             <CarouselBanner />
             <Glasses/>
             <Mission />
