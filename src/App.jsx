@@ -10,7 +10,7 @@ export default function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/clarezaotica" element={<Home />} />
         <Route path="/development" element={<Building />} />
         <Route path="/sobrenos" element={<Building />} />
         <Route path="/catalogo" element={<Building />} />

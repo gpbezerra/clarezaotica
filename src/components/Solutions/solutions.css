@@ -10,7 +10,7 @@
 }
 
 .solutionsContainer h1 {
-    font-size: 36px;
+    font-size: 60px;
     margin-bottom: 20px;
     color: #fff;
     font-family: "Bebas Neue", sans-serif;
@@ -100,13 +100,17 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 770px) {
     .solutionsContainer {
         padding: 20px 5%;
     }
 
     .solutionsCard {
         height: 220px;
+    }
+
+    .solutionsContainer h1 {
+        font-size: 40px;
     }
 
     .solutionsCardText h2 {

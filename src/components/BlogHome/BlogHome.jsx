@@ -2,6 +2,7 @@ import "./blogHome.css";
 import post1 from "../../assets/post1_banner.jpg";
 import post2 from "../../assets/post2_banner.jpg";
 import post3 from "../../assets/post3_banner.jpg";
+import { useEffect } from "react";
 
 const posts = [
     {
@@ -29,6 +30,25 @@ const posts = [
 
 
 const BlogHome = () => {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInRight', 'animate__slow');
+                }
+            });
+        });
+
+        const cards = document.querySelectorAll('.blogHomeCard');
+        cards.forEach(card => observer.observe(card));
+
+        return () => {
+            cards.forEach(card => observer.unobserve(card));
+        };
+    }, []);
+
+
     return (
         <div className="blogHomeContainer">
             <h1>Blog</h1>

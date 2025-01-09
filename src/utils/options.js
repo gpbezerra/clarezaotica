@@ -7,7 +7,7 @@ import contato from "../assets/contato.png";
 import blog from "../assets/blog.png";
 
 export const links = [
-    { link: "/", text: "Início", icon: home  },
+    { link: "/clarezaotica", text: "Início", icon: home  },
     { link: "/sobrenos", text: "Sobre nós", icon: sobre_nos },
     { link: "/catalogo", text: "Catálogo", icon: catalogo },
     { link: "/parceiros", text: "Parceiros", icon: parceiros },

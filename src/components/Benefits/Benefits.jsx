@@ -56,7 +56,7 @@ const Benefits = () => {
                     <div
                         className='benefitsCard'
                         key={key}
-                        style={{ animationDelay: `${key * 0.2}s` }} // Adiciona delay dinâmico
+                        style={{ animationDelay: `${key * 0.2}s` }} 
                     >
                         <div className='benefitsCardContent'>
                             <img src={card.image} alt={card.title} />

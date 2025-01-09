@@ -3,6 +3,7 @@ import solutions1 from "../../assets/solutions1.png"
 import solutions2 from "../../assets/solutions2.png" 
 import solutions3 from "../../assets/solutions3.png" 
 import solutions4 from "../../assets/solutions4.png" 
+import { useEffect } from "react";
 
 const solutions = [
     {
@@ -28,6 +29,24 @@ const solutions = [
 ]
 
 const Solutions = () => {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__zoomIn', 'animate__slow');
+                }
+            });
+        });
+
+        const cards = document.querySelectorAll('.solutionsCard');
+        cards.forEach(card => observer.observe(card));
+
+        return () => {
+            cards.forEach(card => observer.unobserve(card));
+        };
+    }, []);
+
     return (
         <div className="solutionsContainer">
            <h1>Nossas Soluções</h1>

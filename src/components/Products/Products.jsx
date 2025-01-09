@@ -13,7 +13,7 @@ const Products = () => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('animate__animated', 'animate__backInRight', 'animate__slower', 'animate__delay-1s');
+                    entry.target.classList.add('animate__animated', 'animate__backInRight', 'animate__slower');
                 }
             });
         });

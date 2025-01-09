@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className="navbarContainer">
-            <NavLink to="/">
+            <NavLink to="/clarezaotica">
                 <img src={whiteLogo} alt="Logo" />
             </NavLink>
             <div className="menuToggle" onClick={() => setMenuOpen(true)}>
