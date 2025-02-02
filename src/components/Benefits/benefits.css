@@ -136,7 +136,8 @@
         font-weight: bolder;
         color: #087D77;
         padding-bottom: 10px;
-        border-bottom: 3px solid #087D77;
+        text-align: left;
+
     }
 
     .benefitsCarouselContent {
@@ -155,6 +156,7 @@
         font-size: 18px;
         color: #505554;
         width: 300px;
+        text-align: left;
     }
 }
 
@@ -197,12 +199,17 @@
 
     .benefitsCarouselContent p {
         font-size: 15px;
-        text-align: center;
+        margin-top: -10px;
+
+    }
+
+    .benefitsCarouselItem {
+        padding: 30px;
     }
 
     .benefitsCarouselItem h2 {
         font-size: 24px;
-        text-align: left;
+        margin: 0px;
     }
 
 }
@@ -216,12 +223,11 @@
     }
 
     .benefitsCarouselContent p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .benefitsCarouselItem h2 {
-        font-size: 22px;
-        text-align: center;
+        font-size: 23px;
     }
 
 }
@@ -235,14 +241,4 @@
     .benefitsCarouselContent img {
         height: 130px;
     }
-
-    .benefitsCarouselContent p {
-        font-size: 13px;
-    }
-
-    .benefitsCarouselItem h2 {
-        font-size: 22px;
-        text-align: center;
-    }
-
 }

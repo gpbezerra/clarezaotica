@@ -68,7 +68,7 @@ const BlogHome = () => {
                     );
                 })}
             </div>
-                <a id="buttonCatalog" href="/development">Acessar blog</a>
+                <a id="buttonCatalog" href="/blog">Acessar blog</a>
         </div>
     );
 };

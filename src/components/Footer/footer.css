@@ -121,19 +121,17 @@
 
     .footerText h2 {
         font-size: 25px;
+        margin-top: 18px;
+        font-weight: bolder;
     }
 
     .footerText {
-        align-items: center;
         margin-bottom: 20px;
-    }
-
-    .footerTextRow{
-        margin-bottom: 15px;
     }
 
     .footerTextRow p {
         font-size: 15px;
+        font-weight: normal; 
     }
 
     #footerLocalImg {
@@ -154,5 +152,9 @@
 
     .footerContainer::before {
         opacity: 0.7;
+    }
+
+    #footerRights{
+        font-size: 12px;
     }
 }

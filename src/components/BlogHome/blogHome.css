@@ -88,16 +88,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;  
+      margin-top: 0px;
     }
 
     .blogHomeCard{
-        width: 100%;
+        width: 80%;
         margin-top: 20px;
-    }
-}
-
-@media (max-width: 430px) {
-    .blogHomeCard img{
-       max-height: 210px;
     }
 }

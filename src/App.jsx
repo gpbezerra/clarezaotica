@@ -4,21 +4,24 @@ import Navbar from "./components/Navbar/Navbar"
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Building from "./pages/Building/Building";
+import Partners from "./pages/Partners/Partners";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/clarezaotica" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/development" element={<Building />} />
-        <Route path="/sobrenos" element={<Building />} />
+        <Route path="/sobrenos" element={<AboutUs />} />
         <Route path="/catalogo" element={<Building />} />
-        <Route path="/parceiros" element={<Building />} />
+        <Route path="/parceiros" element={<Partners />} />
         <Route path="/duvidas" element={<Building />} />
         <Route path="/contato" element={<Building />} />
         <Route path="/blog" element={<Building />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
