@@ -23,7 +23,7 @@ const Glasses = () => {
     return (
         <div className="glassesContainer">
             <img src={glassesImage} alt="" />
-            <a id='buttonCatalog' href="/catalogo">Confira nosso catálogo</a>
+            <a id='buttonCatalog' href="https://clarezaotica.com.br/catalogo">Confira nosso catálogo</a>
 
         </div>
     );

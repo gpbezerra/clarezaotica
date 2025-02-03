@@ -48,9 +48,9 @@ const Partners = () => {
                     <p>Na CLAREZA ÓTICA, temos o orgulho de trabalhar com as mais renomadas marcas de lentes do mercado, que são sinônimo de qualidade e inovação. Nossos parceiros são líderes na indústria óptica, oferecendo produtos que atendem aos mais altos padrões de excelência. Conheça um pouco mais sobre cada um deles:</p>
                 </div>
                 <div className="partners-content">
-                    {partners.map((partner) => {
+                    {partners.map((partner, key) => {
                         return (
-                            <div className="partners-card">
+                            <div key={key} className="partners-card">
                                 <div className="partners-card-image">
                                     <img src={partner.image} alt={partner.name} />
                                 </div>
