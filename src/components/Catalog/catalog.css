@@ -33,12 +33,11 @@
 }
 
 .catalogSelector {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    white-space: nowrap;
     width: 100%;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #catalogButtonSelected,
@@ -54,6 +53,7 @@
     transition: 200ms linear;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 50px;
 }
 
 #catalogButtonSelected {
@@ -86,7 +86,6 @@
     margin-bottom: 30px;
 }
 
-
 .catalogContentData {
     display: flex;
     flex-direction: column;
@@ -102,11 +101,10 @@
 }
 
 .catalogContentImage img {
-    width: 50%;
+    width: 40%;
     height: auto;
-    max-width: 500px;
+    max-width: 300px;
     border-radius: 20px;
-
 }
 
 .catalogContentText {
@@ -155,7 +153,33 @@
     color: black;
 }
 
-@media (max-width: 770px) {
+/* Desktop (acima de 1000px) */
+@media (min-width: 1000px) {
+    .catalogContent {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .catalogContentSelector {
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    .catalogContentData {
+        width: 70%;
+    }
+
+    .catalogContentImage img {
+        width: 100%;
+    }
+
+    .catalogContentText p {
+        width: 80%;
+    }
+}
+
+/* Mobile (abaixo de 1000px) */
+@media (max-width: 999px) {
     .catalogContainer {
         padding: 40px 8%;
     }
@@ -185,5 +209,27 @@
         width: 160px;
         height: 40px;
         font-size: 13px;
+    }
+
+    .catalogContentImage img {
+        width: 220px; /* Mantido como no seu código */
+    }
+
+    .catalogContentText p {
+        width: 80%; /* Ajustado para melhor legibilidade em mobile */
+    }
+
+    /* Estilização com rolagem horizontal para telas menores que 1000px */
+    .catalogSelector {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        flex-direction: row; /* Garante que os botões fiquem em linha */
+    }
+
+    #catalogButtonSelected,
+    #catalogButton {
+        margin-bottom: 15px; /* Reduzir margem inferior para rolagem horizontal */
     }
 }

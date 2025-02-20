@@ -1,0 +1,180 @@
+.contact-container {
+    width: 100%;
+    padding: 100px 10%;
+    background-color: #087D77;
+    display: flex;
+}
+
+.contact-social {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-social img {
+    width: 410px;
+    margin-bottom: 30px;
+}
+
+.contact-social-media {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.contact-social-media img {
+    width: 35px;
+}
+
+.contact-form {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-form h1 {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-size: 60px;
+}
+
+.contact-form p {
+    font-family: "Open Sans", system-ui;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-form input,
+textarea {
+    color: gray;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.contact-form button {
+    margin-top: 30px;
+    color: white;
+    background-color: #087D77;
+    width: 200px;
+    padding: 10px 10px;
+    border-radius: 12px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    border: 2px solid white;
+    transition: 200ms linear;
+}
+
+textarea {
+    height: 150px;
+}
+
+
+.contact-form button:hover {
+    color: #087D77;
+    background-color: white;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+textarea::placeholder {
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-social {
+        width: 100%;
+        order: 2;
+        margin-top: 50px;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 100px 8%;
+    }
+
+    .contact-social h1 {
+        width: 100%;
+        order: 2;
+        margin-top: 50px;
+    }
+
+    .contact-form {
+        margin-top: 60px;
+        width: 100%;
+    }
+
+    .contact-form input {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .contact-form input::placeholder {
+        font-size: 18px;
+    }
+
+    .contact-form textarea {
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    .contact-form textarea::placeholder {
+        font-size: 18px;
+    }
+
+
+    .contact-form h1 {
+        font-size: 40px;
+    }
+
+    .contact-form p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contact-form button {
+        width: 160px;
+        font-size: 20px;
+    }
+
+    .contact-social img{
+        width: 300px;
+    }
+
+
+    .contact-social-media{
+        width: 150px;
+    }
+
+    .contact-social-media img{
+        width: 30px;
+    }
+}

@@ -5,6 +5,7 @@ import hoya from "../../assets/parceiros/hoya.png";
 import rodenstock from "../../assets/parceiros/rodenstock.png";
 import transitions from "../../assets/parceiros/transitions.png";
 import zeiss from "../../assets/parceiros/zeiss.png";
+import { useEffect } from "react";
 
 const partners = [
     {
@@ -40,6 +41,24 @@ const partners = [
 ];
 
 const Partners = () => {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__zoomIn', 'animate__slow');
+                }
+            });
+        });
+
+        const cards = document.querySelectorAll('.partners-card');
+        cards.forEach(card => observer.observe(card));
+
+        return () => {
+            cards.forEach(card => observer.unobserve(card));
+        };
+    }, []);
+
     return (
         <>
             <div className="partners-container">

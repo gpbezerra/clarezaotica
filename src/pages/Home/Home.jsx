@@ -1,5 +1,4 @@
 import "./home.css";
-import Navbar from "../../components/Navbar/Navbar";
 import CarouselBanner from "../../components/CarouselBanner/CarouselBanner";
 import Glasses from "../../components/Glasses/Glasses";
 import Mission from "../../components/Mission/Mission";
@@ -20,7 +19,7 @@ const Home = () => {
             <Benefits/>
             <Catalog/>
             <Solutions/>
-            <BlogHome/>
+            {/* <BlogHome/> */}
         </>
     )
 }

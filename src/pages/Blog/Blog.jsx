@@ -1,8 +1,8 @@
-import "./blogHome.css";
+import { useEffect } from "react";
 import post1 from "../../assets/post1_banner.jpg";
 import post2 from "../../assets/post2_banner.jpg";
 import post3 from "../../assets/post3_banner.jpg";
-import { useEffect } from "react";
+import "./Blog.css";
 
 const posts = [
     {
@@ -28,8 +28,7 @@ const posts = [
     },
 ]
 
-
-const BlogHome = () => {
+const Blog = () => {
 
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -40,7 +39,7 @@ const BlogHome = () => {
             });
         });
 
-        const cards = document.querySelectorAll('.blogHomeCard');
+        const cards = document.querySelectorAll('.blogDeckCard');
         cards.forEach(card => observer.observe(card));
 
         return () => {
@@ -48,29 +47,25 @@ const BlogHome = () => {
         };
     }, []);
 
-
     return (
-        <div className="blogHomeContainer">
+        <div className="blogContainer">
             <h1>Blog</h1>
             <p>Fique por dentro das últimas novidades, dicas e informações sobre cuidados com a visão em nosso blog. Acompanhe nossos artigos e esteja sempre bem informado.</p>
-            <div className="blogHomeDeckCard">
-                {posts.map((post, key) => {
-                    return (
-                        <a href={post.link} key={key} className="blogHomeCard">
-                                <img src={post.img} alt={post.title} />
-
-                            <div className="blogHomeCardText">
-                                <h2>{post.title}</h2>
-                                <p>{post.sub_title}</p>
-                                <p>{post.date}</p>
-                            </div>
-                        </a>
-                    );
-                })}
+            <div className="blogDeckCard">
+                {posts.map((post, key) => (
+                    <div key={key} className="blogCard">
+                        <img src={post.img} alt={post.title} />
+                        <div className="blogCardText">
+                            <h2>{post.title}</h2>
+                            <p>{post.sub_title}</p>
+                            <p><strong>{post.date}</strong></p>
+                            <a href={post.link} className="readMoreButton">Leia mais</a>
+                        </div>
+                    </div>
+                ))}
             </div>
-                <a id="buttonCatalog" href="/blog">Acessar blog</a>
         </div>
     );
 };
 
-export default BlogHome;
+export default Blog;
